@@ -1,0 +1,87 @@
+@mainColor:#fe4365;
+html{
+    background-color: #eee;
+}
+body{
+    max-width: 1111px;
+    min-width: 320px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-left: 1px solid #83af9b;
+    border-right: 1px solid #83af9b;
+    padding: 60px 20px;
+}
+// 头部导航模块
+#header{
+    background-color: #fff;
+    .navbar-default{
+        background-color: #fff;
+        border: none;
+        .logo{
+            >a{
+                >img{
+                    width: 60px;
+                }
+            }
+        }
+        .collapse{
+         background-color: #fff;
+            .center-block{
+                 
+             >li{
+                 padding: 0 15px;
+                 text-align: center;
+                 >a{
+                     font-size: 18px;
+                     color: #000;
+                     font-weight: 600;
+                     &:hover{
+                         color: @mainColor;
+                     }
+                 }
+                 >.active{
+                     color: @mainColor;
+                 }
+             }
+         }
+        }
+         
+        .portrait{
+            >li{
+                 height: 50px;
+                 width: 58px;
+                >a{
+                    padding: 6px 0px;
+                    >img{
+                        
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        } 
+    }
+}
+// 中部展示模块
+#mien{
+    background-color: #fff;
+    .jumbotron{
+        background-color: #fff;
+        padding: 20px 0px;
+        >.container{
+            >img{
+                display: block;
+                margin: 0 atuo;
+               width: 100%; 
+            }
+        }
+    }
+}
+// "生"板块
+#accrue{
+    margin-top: 40px;
+    >h3{
+        padding: 20px 0;
+        font-size: 24px;
+    }
+}
