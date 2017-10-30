@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="生活不至于眼前的苟且，还有学习和……学习" />
+    <meta name="keywords" content="知尔,夜空笔记,knowErr,个人网站"/>
+    <meta name="author" content="知尔, yekongbiji@163.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>如或知尔，则何以哉</title>
@@ -22,7 +25,7 @@
                         aria-expanded="false">
                           <span class="sr-only">Toggle navigation</span>
                           <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
+                          <slopan class="icon-bar"></span>
                           <span class="icon-bar"></span>
                         </button>
                     <a class="navbar-brand " href="#">
@@ -31,10 +34,10 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav nav-menu center-block">
-                        <li><a class="active" href="#">生活</a></li>
-                        <li><a href="#">小集</a></li>
-                        <li><a href="#">足迹</a></li>
-                        <li><a href="#">杂记</a></li>
+                        <li><a class="active" data-menu="live" href="index.html">生活</a></li>
+                        <li><a href="smallSet.html" data-menu="small-set" class="">小集</a></li>
+                        <li><a href="" data-menu="footprint" class="">足迹</a></li>
+                        <li><a href="" data-menu="notes" class="">杂记</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right portrait hidden-xs">
 
@@ -45,17 +48,25 @@
                 </div>
             </div>
         </nav>
+        
+        
     </header>
     <!-- 近期精彩展示 -->
     <div id="mien">
         <div class="jumbotron">
             <div class="container">
+                <div class="live-text">
+                    <a href="#">
+                        <h4>生活本来就无趣</h4>
+                        <p>总归有些时候，我需要`努力去坐一些认真正确的事情，哪怕失败</p>
+                    </a>
+                </div>
                 <img src="./images/saber1.jpg" alt="saber1">
             </div>
         </div>
     </div>
     <!-- 生活板块板块  -->
-    <div id="accrue">
+    <div id="accrue example-direction">
         <h3>记录</h3>
         <div class="row">
             <div class=" col-sm-6  accrue-img1">
@@ -100,11 +111,11 @@
     </div>
     <footer id="footer">
         <div class="row clearfix bootom">
-            <div class="col-sm-2 col-xs-4 pull-left copyright">
+            <div class="col-sm-6 col-xs-12 pull-left copyright">
                     <span class="">© knowErr 2017</span> 
             </div>
-            <div class="col-sm-5 col-xs-8 pull-right link">
-                <span class="pull-right">友情链接:<a href="http://lueii.com">小图·未来已来，只是还未流行</a></span>
+            <div class="col-sm-4 col-xs-12 pull-right link">
+                <span >友情链接:<a href="http://lueii.com">小图·未来已来，只是还未流行</a></span>
             </div>
             
         </div>
@@ -113,5 +124,6 @@
 </body>
 <script src="./js/lib/jquery-2.1.4.js"></script>
 <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
 
 </html>

@@ -1,4 +1,10 @@
 @mainColor:#fe4365;
+a{
+    color: #000;
+    &:hover{
+        text-decoration: none;
+    }
+}
 html{
     background-color: #eee;
 }
@@ -64,15 +70,53 @@ body{
 }
 // 中部展示模块
 #mien{
+   
     background-color: #fff;
     .jumbotron{
         background-color: #fff;
         padding: 20px 0px;
         >.container{
+            position: relative;
+            width: 100%;
+            >.live-text{
+                position: absolute;
+                width: 90%;
+                height: 90%;
+                display: none;
+                opacity: 0.7;
+                text-align: center;
+                background-color: #fff;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                >a{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    >h4{
+                        font-style: 24px;
+                        color: #000;
+                        &:hover{
+                            color: @mainColor;
+                        }
+                    }
+                    >P{
+                        font-size: 16px;
+                        color: #333;
+                       &:hover{
+                           color: @mainColor;
+                       }
+                    }
+                }
+            }
             >img{
                 display: block;
                 margin: 0 atuo;
-               width: 100%; 
+                width: 100%; 
             }
         }
     }
